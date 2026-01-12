@@ -1,0 +1,30 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+.map-panel {
+  height: 70vh;
+  min-height: 420px;
+}
+.spot-list {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .map-panel {
+    height: 55vh;
+  }
+}
